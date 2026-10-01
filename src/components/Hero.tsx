@@ -251,7 +251,44 @@ export default function Hero() {
           >
             Explore Events
           </MagneticButton>
+        </motion.div>
 
+        {/* Cash Prize Creative Badge */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 3.7,
+            ease: [0.16, 1, 0.3, 1],
+          }}
+          style={{
+            marginTop: '2.5rem',
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '0.6rem',
+            padding: '0.6rem 1.4rem',
+            background: 'linear-gradient(90deg, rgba(251, 191, 36, 0.05), rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.05))',
+            border: '1px solid rgba(251, 191, 36, 0.4)',
+            borderRadius: '30px',
+            boxShadow: '0 0 20px rgba(245, 158, 11, 0.2), inset 0 0 10px rgba(251, 191, 36, 0.1)',
+            cursor: 'default',
+          }}
+          whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(245, 158, 11, 0.4)' }}
+        >
+          <span style={{ fontSize: '1.2rem' }}>🏆</span>
+          <span
+            style={{
+              color: '#fbbf24',
+              fontWeight: 700,
+              fontFamily: 'var(--font-display)',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase',
+              fontSize: '0.95rem',
+            }}
+          >
+            Win Exciting Cash Prizes!
+          </span>
         </motion.div>
 
 

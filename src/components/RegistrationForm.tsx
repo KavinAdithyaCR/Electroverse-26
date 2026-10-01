@@ -77,6 +77,19 @@ export default function RegistrationForm() {
                   </MagneticButton>
                 </a>
               </div>
+
+              <p
+                style={{
+                  color: 'var(--text-secondary)',
+                  fontSize: '0.9rem',
+                  lineHeight: '1.5',
+                  margin: '0',
+                  letterSpacing: '0.02em',
+                  fontFamily: "var(--font-mono)",
+                }}
+              >
+                <span style={{ color: '#00f0ff', fontWeight: 600 }}>Note:</span> Offline registration is available on <strong>Oct 13</strong> between <strong style={{ color: '#fff' }}>8:30 AM – 10:00 AM</strong>.
+              </p>
             </motion.div>
           </div>
         </SectionReveal>
