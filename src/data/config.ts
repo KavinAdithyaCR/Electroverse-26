@@ -29,7 +29,7 @@ export const siteConfig = {
     directions: "Located on the Tirunelveli–Coutrallam highway, easily accessible from Tirunelveli Junction.",
   },
   social: {
-    instagram: "https://www.instagram.com/electroverse.26?stkn=MWRpZmV3bmRrYmlkbQ==",
+    instagram: "https://www.instagram.com/electroverse_26?stkn=MXdzbjhyOWx4OW52Zw==",
     youtube: "https://youtube.com/@electroverse26",
     whatsapp: "https://wa.me/916385596246",
   },
