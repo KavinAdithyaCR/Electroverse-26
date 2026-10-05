@@ -1,4 +1,4 @@
-import { useState, useRef, MouseEvent } from 'react';
+import { useState, useRef, MouseEvent, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { EventItem } from '../data/config';
 import MagneticButton from './MagneticButton';
@@ -444,6 +444,24 @@ export default function EventGrid({
   const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
   const [activeTab, setActiveTab] = useState<'all' | 'technical-1' | 'tech-with-fun'>('all');
 
+  useEffect(() => {
+    if (selectedEvent) {
+      window.history.pushState({ modalOpen: true }, '');
+      const handlePopState = () => {
+        setSelectedEvent(null);
+      };
+      window.addEventListener('popstate', handlePopState);
+      return () => window.removeEventListener('popstate', handlePopState);
+    }
+  }, [selectedEvent]);
+
+  const handleCloseModal = () => {
+    setSelectedEvent(null);
+    if (window.history.state?.modalOpen) {
+      window.history.back();
+    }
+  };
+
   const filteredEvents = showTabs
     ? activeTab === 'all'
       ? events
@@ -543,7 +561,7 @@ export default function EventGrid({
       {selectedEvent && (
         <EventModal
           event={selectedEvent}
-          onClose={() => setSelectedEvent(null)}
+          onClose={handleCloseModal}
           accentColor={accentColor}
         />
       )}
