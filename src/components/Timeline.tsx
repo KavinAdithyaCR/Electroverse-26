@@ -27,10 +27,12 @@ export default function Timeline() {
     >
       <div className="container">
         <SectionReveal>
-          <div className="eyebrow" style={{ display: 'table', margin: '0 auto 0.8rem' }}>
-            <Sparkles size={14} /> SCHEDULE & TRACKS
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '0.8rem' }}>
+            <span className="eyebrow" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Sparkles size={14} /> SCHEDULE & TRACKS
+            </span>
           </div>
-          <h2 className="section-title text-center" style={{ marginBottom: '3rem' }}>EVENT FLOW</h2>
+          <h2 className="section-title text-center" style={{ textAlign: 'center', marginBottom: '3rem' }}>EVENT FLOW</h2>
         </SectionReveal>
 
         <div

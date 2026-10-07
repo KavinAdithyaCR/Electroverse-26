@@ -205,7 +205,7 @@ export default function Hero() {
           <a href="https://forms.gle/mdLKPiBsBYi769i87" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             <MagneticButton
               variant="primary"
-              size="lg"
+              size="md"
               onClick={() => {}}
             >
               ⚡ Register Now
@@ -213,7 +213,7 @@ export default function Hero() {
           </a>
           <MagneticButton
             variant="secondary"
-            size="lg"
+            size="md"
             onClick={() =>
               document
                 .getElementById('events')
@@ -234,11 +234,11 @@ export default function Hero() {
             ease: [0.16, 1, 0.3, 1],
           }}
           style={{
-            marginTop: '2.5rem',
+            marginTop: '1rem',
             display: 'inline-flex',
             alignItems: 'center',
-            gap: '0.6rem',
-            padding: '0.6rem 1.4rem',
+            gap: '0.4rem',
+            padding: '0.4rem 1rem',
             background: 'linear-gradient(90deg, rgba(251, 191, 36, 0.05), rgba(245, 158, 11, 0.15), rgba(251, 191, 36, 0.05))',
             border: '1px solid rgba(251, 191, 36, 0.4)',
             borderRadius: '30px',
