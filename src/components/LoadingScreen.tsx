@@ -89,8 +89,8 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
               src="/logo.jpg"
               alt="ELECTROVERSE '26 Logo"
               style={{
-                width: 70,
-                height: 70,
+                width: 60,
+                height: 60,
                 borderRadius: '50%',
                 border: '2px solid #f59e0b',
                 boxShadow: '0 0 25px rgba(245, 158, 11, 0.5)',
@@ -99,7 +99,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             <div
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(2rem, 9vw, 3.2rem)',
+                fontSize: 'clamp(0.7rem, 5vw, 3rem)',
                 fontWeight: 800,
                 letterSpacing: '-0.03em',
                 background: 'linear-gradient(135deg, #ffffff 0%, #fbbf24 50%, #00f0ff 100%)',
@@ -107,17 +107,16 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                 WebkitTextFillColor: 'transparent',
                 backgroundClip: 'text',
                 display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
+                flexDirection: 'row',
+                alignItems: 'baseline',
                 justifyContent: 'center',
+                whiteSpace: 'nowrap',
                 lineHeight: 1.1,
                 width: '100%',
               }}
             >
-              <span>ELECTRO</span>
-              <span>
-                VERSE<span style={{ fontSize: '0.6em', opacity: 0.8, color: '#00f0ff', marginLeft: '0.05em' }}>'26</span>
-              </span>
+              <span>ELECTROVERSE</span>
+              <span style={{ fontSize: '0.6em', opacity: 0.8, color: '#00f0ff', marginLeft: '0.05em' }}>'26</span>
             </div>
           </motion.div>
 
@@ -128,7 +127,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             transition={{ delay: 0.3, duration: 0.6 }}
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: 'clamp(0.6rem, 2.5vw, 0.68rem)',
+              fontSize: 'clamp(0.5rem, 2vw, 0.65rem)',
               letterSpacing: '0.25em',
               textTransform: 'uppercase',
               color: 'var(--text-tertiary)',
@@ -177,7 +176,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             transition={{ delay: 0.7, duration: 0.4 }}
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: '0.72rem',
+              fontSize: '0.65rem',
               color: phase === 'ready' ? 'var(--accent-primary)' : 'var(--text-tertiary)',
               letterSpacing: '0.15em',
               textTransform: 'uppercase',

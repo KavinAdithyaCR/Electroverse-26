@@ -25,14 +25,14 @@ export default function Hero() {
       id="home"
       ref={sectionRef}
       style={{
-        minHeight: '100dvh',
+        minHeight: 'auto',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        padding: '7rem 1.5rem 3rem',
+        padding: '3rem 1.5rem 1rem',
       }}
     >
       {/* Grid overlay */}
@@ -112,8 +112,8 @@ export default function Hero() {
             src="/logo.jpg"
             alt="ELECTROVERSE '26 Official Emblem"
             style={{
-              width: 'clamp(140px, 22vw, 220px)',
-              height: 'clamp(140px, 22vw, 220px)',
+              width: 'clamp(100px, 18vw, 180px)',
+              height: 'clamp(100px, 18vw, 180px)',
               objectFit: 'cover',
               borderRadius: '50%',
               border: '2px solid rgba(245, 158, 11, 0.6)',
@@ -144,7 +144,7 @@ export default function Hero() {
           transition={{ duration: 1.1, delay: 2.8, ease: easeExpo }}
           style={{
             fontFamily: 'var(--font-display)',
-            fontSize: 'clamp(2rem, 11vw, 5.5rem)',
+            fontSize: 'clamp(0.8rem, 5.5vw, 4.5rem)',
             fontWeight: 900,
             lineHeight: 1.05,
             letterSpacing: '-0.02em',
@@ -157,48 +157,19 @@ export default function Hero() {
             marginBottom: '0.6rem',
             filter: 'drop-shadow(0 0 25px rgba(245, 158, 11, 0.3))',
             display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
-            alignItems: 'center',
+            flexDirection: 'row',
+            alignItems: 'baseline',
             justifyContent: 'center',
+            whiteSpace: 'nowrap',
             width: '100%',
             margin: '0 auto',
           }}
         >
-          <span>ELECTRO</span>
-          <span>
-            VERSE<span style={{ fontSize: '0.6em', marginLeft: '0.05em' }}>'26</span>
-          </span>
+          <span>ELECTROVERSE</span>
+          <span style={{ fontSize: '0.6em', marginLeft: '0.05em' }}>'26</span>
         </motion.h1>
 
-        {/* Tagline badge row */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 3.1, ease: easeExpo }}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '1.5rem',
-          }}
-        >
-          <span
-            style={{
-              fontSize: '0.8rem',
-              color: '#fbbf24',
-              fontFamily: 'var(--font-mono)',
-              fontWeight: 700,
-              letterSpacing: '0.22em',
-              padding: '0.4rem 1.2rem',
-              background: 'rgba(245, 158, 11, 0.12)',
-              border: '1px solid rgba(245, 158, 11, 0.35)',
-              borderRadius: '20px',
-              boxShadow: '0 0 15px rgba(245, 158, 11, 0.2)',
-            }}
-          >
-            {siteConfig.tagline}
-          </span>
-        </motion.div>
+
 
         {/* Subtitle */}
         <motion.p
@@ -207,7 +178,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 3.3, ease: easeExpo }}
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.95rem, 2vw, 1.15rem)',
+            fontSize: 'clamp(0.75rem, 2vw, 1.1rem)',
             fontWeight: 500,
             color: 'var(--text-secondary)',
             letterSpacing: '0.02em',
@@ -284,7 +255,7 @@ export default function Hero() {
               fontFamily: 'var(--font-display)',
               letterSpacing: '0.05em',
               textTransform: 'uppercase',
-              fontSize: '0.95rem',
+              fontSize: '0.8rem',
             }}
           >
             Win Exciting Cash Prizes!

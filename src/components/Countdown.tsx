@@ -111,7 +111,7 @@ export default function Countdown() {
   return (
     <section
       style={{
-        padding: 'clamp(3rem, 6vw, 6rem) 0',
+        padding: '1rem 0 3rem 0',
         position: 'relative',
       }}
     >

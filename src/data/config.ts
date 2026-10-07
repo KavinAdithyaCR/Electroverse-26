@@ -85,7 +85,7 @@ export const technicalEvents: EventItem[] = [
     rules: [
       "Team of 1-2 members",
       "Submit PPT via email to electroverse26x@gmail.com",
-      "10-minute presentation + 5-minute Q&A",
+      "7-minute presentation + 3-minute Q&A",
       "IEEE format preferred",
       "Judged on content, clarity, and innovation",
     ],
@@ -156,7 +156,7 @@ export const technicalEvents: EventItem[] = [
     date: "October 13, 2026",
     time: "10:00 AM",
     venue: "Computer Lab",
-    contact: { name: "S.M.R", phone: "+91 62742 42596" },
+    contact: { name: "Sudalai", phone: "+91 63742 42596" },
   },
   {
     id: "mini-project",
@@ -168,7 +168,7 @@ export const technicalEvents: EventItem[] = [
     rules: [
       "Team of 1-2 members",
       "Working prototype or simulation required",
-      "10-minute demo + 5-minute Q&A",
+      "7-minute demo + 3-minute Q&A",
       "Judged on innovation, feasibility, and execution",
     ],
     teamSize: "1-2 members",
