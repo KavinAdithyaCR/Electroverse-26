@@ -57,7 +57,7 @@ export default function InstagramSection() {
                   <MagneticButton variant="secondary" size="md" onClick={() => {}}>
                     <span style={{ display: 'flex', alignItems: 'center', gap: '6px', justifyContent: 'center', fontSize: '0.8rem', whiteSpace: 'nowrap' }}>
                       <Camera size={16} />
-                      @electroverse.26
+                      @ELECTROVERSE_26
                     </span>
                   </MagneticButton>
                 </a>
@@ -80,7 +80,7 @@ export default function InstagramSection() {
                 }}
               >
                 <img
-                  src="/insta-qr.png"
+                  src="/qr.png"
                   alt="Instagram QR Code"
                   style={{
                     width: '100%',
