@@ -16,7 +16,7 @@ export const siteConfig = {
   organization: "Society of Electrical and Electronics Engineers (SEEE)",
   collegeName: "Government College of Engineering, Tirunelveli",
   collegeLocation: "Tirunelveli - 627007",
-  eventDate: "2026-10-13", // YYYY-MM-DD format for countdown
+  eventDate: "2026-10-12T18:00:00", // YYYY-MM-DD format for countdown
   eventDisplayDate: "October 13, 2026",
   eventTime: "9:00 AM — 5:00 PM",
   registrationLink: "#register",

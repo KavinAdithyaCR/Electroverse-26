@@ -128,7 +128,7 @@ export default function Countdown() {
               marginBottom: '2.5rem',
             }}
           >
-            {isLive ? 'THE EVENT IS LIVE ⚡' : 'EVENT STARTS IN'}
+            {isLive ? 'THE EVENT IS LIVE ⚡' : 'Online registration Closes in 12/10/2026 Monday Evening 6 PM'}
           </div>
         </SectionReveal>
 

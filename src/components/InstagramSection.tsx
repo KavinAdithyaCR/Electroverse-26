@@ -80,7 +80,7 @@ export default function InstagramSection() {
                 }}
               >
                 <img
-                  src="/qr.png"
+                  src="/new-insta-qr.jpg"
                   alt="Instagram QR Code"
                   style={{
                     width: '100%',
